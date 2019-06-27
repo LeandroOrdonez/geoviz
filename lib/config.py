@@ -10,7 +10,7 @@ network_type = 'drive'
 
 basepath = os.environ.get('GEOVIZ_TMP', None)
 
-tmp_folder_path = '~/geotmp' ### Set this to an existing folder
+tmp_folder_path = '.' ### Set this to an existing folder
 assert tmp_folder_path, 'please specify a path to store temprary/cached files'
 
 # Toggle this False to force city_blocks notebook to recalculate city_blocks
