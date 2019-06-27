@@ -8,7 +8,7 @@ USER $NB_UID
 
 COPY requirements.txt /tmp/
 
-RUN mkdir -p code/cot_cim_notebook/ && chown -R jovyan:users /home/jovyan/code/ && chown -R jovyan:users /home/jovyan/code/cot_cim_notebook
+RUN mkdir -p code/geoviz/ && chown -R jovyan:users /home/jovyan/code/ && chown -R jovyan:users /home/jovyan/code/geoviz
 
 WORKDIR code/geoviz/
 
