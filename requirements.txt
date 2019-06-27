@@ -4,13 +4,13 @@ osmnx
 networkx
 descartes
 pandas
-numpy
+numpy>=1.16
 geopandas
 matplotlib
 geopy
 tqdm 
 sqlalchemy
-mysqlclient
+#mysqlclient
 tables
 seaborn
 jupyter
