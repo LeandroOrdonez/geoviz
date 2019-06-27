@@ -1,4 +1,4 @@
-git+git://github.com/halfdanrump/folium.git@master
+folium
 shapely
 osmnx
 networkx

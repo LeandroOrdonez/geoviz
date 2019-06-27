@@ -103,14 +103,15 @@ def remove_deadends(g, plot_all=False):
     
     simpler = g.to_undirected().copy()
     while True:
-        nc = ['r' if degree <= 1 else 'b' for node, degree in simpler.degree().items()]
+        nc = ['r' if degree <= 1 else 'b' for node, degree in simpler.degree()]
         n_nodes = len(simpler.nodes())        
         n_removed = len(list(filter(lambda x: x=='r', nc)))
         if plot_all:
             print('number of nodes in graph: {}, and number of nodes that will be removed: {}'.format(n_nodes, n_removed))
             ox.plot_graph(simpler, node_color=nc, node_zorder=3)
-
-        for node, degree in simpler.degree().items():
+        
+        iterable_copy = simpler.copy()
+        for node, degree in iterable_copy.degree():
             if degree <= 1: 
                 simpler.remove_node(node)
 
